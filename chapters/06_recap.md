@@ -1,8 +1,8 @@
-## Was waren unsere Challenges?
+## What were our challenges again?
 
-* Projektvielfalt <p style="color: red"><span class="fragment highlight-green" data-fragment-index="1">Softwareproduktlinien</span><span class="fragment" data-fragment-index="1">👍</span></p>
-* Dokumentation und Nachweis der SW Qualität <p style="color: red"><span class="fragment highlight-green" data-fragment-index="2">A.SPICE</span><span class="fragment" data-fragment-index="2">👍</span></p>
-* Continuous Integration <p style="color: red"><span class="fragment highlight-green" data-fragment-index="3">Weniger ist mehr</span><span class="fragment" data-fragment-index="3">👍</span></p>
+* Project diversity <p style="color: red"><span class="fragment highlight-green" data-fragment-index="1">Software Product Lines</span><span class="fragment" data-fragment-index="1">👍</span></p>
+* Documentation and verification of software quality <p style="color: red"><span class="fragment highlight-green" data-fragment-index="2">A.SPICE</span><span class="fragment" data-fragment-index="2">👍</span></p>
+* Continuous Integration <p style="color: red"><span class="fragment highlight-green" data-fragment-index="3">Less is more</span><span class="fragment" data-fragment-index="3">👍</span></p>
 
 Note:
 
@@ -24,5 +24,8 @@ Unsere Antwort auf CI: Leichtgewichtige Pipelines für GitHub, Jenkins und Co., 
 
 ---
 
-![](images/qr-presentation-link.png)
-https://avengineers.github.io/CodeDays2024/
+<div>
+<img src="images/qr-presentation-link.png" alt="QR Code linking to the Useblocks User Day 2025 presentation">
+</div> <!-- .element: style="width: 30%; text-align: center; margin: 0 auto;" -->
+
+<p style="text-align: center; font-size: 0.7em;"><a href="https://avengineers.github.io/UseblocksUserday2025/">https://avengineers.github.io/UseblocksUserday2025/</a></p>

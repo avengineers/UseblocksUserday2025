@@ -7,22 +7,19 @@ Automotive Software Process Improvement and Capability Determination <!-- .eleme
 https://vda-qmc.de/automotive-spice/ <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Note:
-
-Matthias hat gerade gezeigt, wie wir mit CMake und Visual Studio Code eine schöne Software-Produkt-Linien-Plattform aufbauen.
-
-Kommen wir nun zu unserer zweiten Challenge: A.SPICE.
+Now let's move on to our second challenge: A.SPICE.
 
 "click"
 
-Die Abkürzung A.SPICE steht für ...
+The abbreviation A.SPICE stands for ...
 
-Klingt fancy, ist aber im Wesentlichen ein Prozessmodell, das die Entwicklung von Software in der Automobilindustrie beschreibt.
+Sounds fancy, but it is essentially a process model that describes the development of software in the automotive industry.
 
-Es ist auch ein Reifegradmodel, das die Reifegrade 0 bis 5 definiert.
+It is also a maturity model that defines maturity levels 0 to 5.
 
-Diese Reifegrade werden durch die Erfüllung von Prozessanforderungen erreicht und müssen durch definierte Artefakte nachgewiesen werden.
+These maturity levels are achieved through the fulfilment of process requirements and must be demonstrated by defined artefacts.
 
-Ich will auf die Reifegrade nicht näher eingehen, aber auf die Artefakte, die es zu erstellen gibt.
+I won't go into the maturity levels in detail, but I will go into the artefacts that need to be created.
 
 --
 
@@ -32,17 +29,17 @@ Ich will auf die Reifegrade nicht näher eingehen, aber auf die Artefakte, die e
 
 Note:
 
-Hier sieht man eigentlich recht gut, was von den Entwicklern so erwartet wird: Jede Menge Artefakte.
+Here you can actually see quite well what is expected of the developers: Lots of artefacts.
 
-Und dann muss das Alles auch noch miteinander verknüpft bzgl. verlinkt werden.
+And then everything has to be linked together.
 
-Und da wir als Softwerker natürlich alles automatisieren wollen, ist es unser Ziel, die geforderten Artefakte mit möglichst wenig Zusatzaufwand mit unserer Plattform erstellen zu können.
+And since we as software engineers naturally want to automate everything, our goal is to be able to create the required artifacts with as little additional effort as possible using our platform.
 
-Zunächst haben wir uns auf die Prozesse
+Initially, we focussed on the processes
 
-SWE.3: Software Detailed Design and Unit Construction und SWE.4: Software Unit Verification
+SWE.3: Software Detailed Design and Unit Construction and SWE.4: Software Unit Verification
 
-konzentriert.
+processes.
 
 --
 
@@ -54,19 +51,19 @@ konzentriert.
 
 Note:
 
-Hier sehen wir nochmal im Ausschnitt, was wir für SWE.3 und SWE.4 machen müssen.
+Here we can see again in detail what we have to do for SWE.3 and SWE.4.
 
-Die Units schreiben wir in C und testen sie mit Google Test oder was Ähnliches, klar, das haben wir im Griff.
+We write the units in C and test them with Google Test or something similar, of course, we have that under control.
 
-Die Dokumentation inkl. Software Detailed Design erzeugen wir mit Sphinx und Restructured Text, auch einfach.
+We create the documentation including the software detailed design with Sphinx and Restructured Text, also easy.
 
 "click"
 
-Das alles packen wir für eine Komponente in einen Ordner, der so aussieht: doc, src und test.
+We put all of this for a component in a folder that looks like this: doc, src and test.
 
-Aber: wie bringen wir das alles in ein Dokument und verknüpfen es korrekt miteinander?
+But how do we put it all into a document and link it together correctly?
 
-Die Antwort ist ...
+The answer is ...
 
 --
 
@@ -98,23 +95,23 @@ needs_extra_links = [
 
 Note:
 
-Sphinx und Sphinx-Needs
+Sphinx and Sphinx-Needs
 
 "click"
 
-Sphinx-Needs ist eine Open-Source Erweiterung für Sphinx.
+Sphinx-Needs is an open source extension for Sphinx.
 
-Sie ermöglicht es, sogenannte "Needs"-Typen zu definieren und miteinander zu verlinken.
-
-"click"
-
-Wir haben für die A.SPICE Artefakte unsere eigenen Typen definiert: Requirement, Specification, Implementation und Test Case.
+It makes it possible to define so-called "Needs" types and link them together.
 
 "click"
 
-Außerdem haben wir eigene Link-Typen definiert, die die Verknüpfungen zwischen den Artefakten beschreiben.
+We have defined our own types for the A.SPICE artefacts: Requirement, Specification, Implementation and Test Case.
 
-Okay, wie sieht das dann im Code aus?
+"click"
+
+We have also defined our own link types that describe the links between the artefacts.
+
+Okay, so what does this look like in the code?
 
 --
 
@@ -148,19 +145,19 @@ Design Considerations
 
 Note:
 
-Zuerst schauen wir uns das Software Detailed Design an.
+First, let's take a look at the software detailed design.
 
 "click"
 
-Hier sehen wir ein Beispiel für ein Needs-Element im Software Detailed Design, also direkt in rst.
+Here we see an example of a Needs element in Software Detailed Design, i.e. directly in rst.
 
-Wir verwenden hier den Needs-Typ "spec" für Specification, geben dem spec-Element einen Namen und eine eindeutige ID.
+Here we use the Needs type "spec" for Specification, give the spec element a name and a unique ID.
 
 "click"
 
-Das generierte Dokument sieht dann so aus.
+The generated document then looks like this.
 
-Hier sieht man auch schon die Verknüpfung zu den anderen Artefakten.
+Here you can already see the link to the other artefacts.
 
 --
 
@@ -201,19 +198,19 @@ https://boschglobal.github.io/doxysphinx/ <!-- .element: class="fragment" data-f
 
 Note:
 
-In der Unit Test Specification, also direkt im Testcode sieht es etwas anders aus.
+In the unit test specification, i.e. directly in the test code, the situation is somewhat different.
 
 "click"
 
-Hier ein Code-Beispiel eines Needs-Elements mit dem Typ "test" in einem rst-Block innerhalb eines Doxygen-Kommentars.
+Here is a code example of a Needs element with the type "test" in an rst block within a Doxygen comment.
 
-Wie ihr hier sehen könnt, geben wir bei einem test-Element dann auch gleich an, welche spec-Elemente und/oder Requirements getestet werden.
+As you can see here, with a test element we also specify which spec elements and/or requirements are tested.
 
 "click"
 
-Um diese rst-Blöcke in unser Sphinx-Dokument zu bekommen, verwenden wir zum einen Doxygen und dazu ein weiteres Open-Source Tool namens doxysphinx.
+To get these rst blocks into our Sphinx document, we use Doxygen on the one hand and another open source tool called doxysphinx on the other.
 
-Doxyshpinx ermöglicht es uns, den kompletten HTML-Output von Doxygen in unser Sphinx-Dokument einzubinden.
+Doxyshpinx enables us to integrate the complete HTML output of Doxygen into our Sphinx document.
 
 --
 
@@ -246,15 +243,15 @@ void lightController(void) {
 
 Note:
 
-In der Software Unit sieht es dann ähnlich aus.
+The situation is similar in the software unit.
 
 "click"
 
-Hier verwenden wir ein Needs-Element vom Typ "impl" und verlinken die spec-Elemente, die wir implementieren.
+Here we use a Needs element of type "impl" and link the spec elements that we are implementing.
 
 "click"
 
-Im Sphinx-Dokument erscheint dann in der Beschreibung der dokumentierten Funktion ein impl-Element mit dem Link zu dem entsprechenden spec-Element.
+An impl element with the link to the corresponding spec element then appears in the Sphinx document in the description of the documented function.
 
 --
 
@@ -272,20 +269,21 @@ Unit Test Results
 ```
 <!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 45%" -->
 
-https://sphinx-test-reports.readthedocs.io/ <!-- .element: class="fragment" data-fragment-index="2" -->
+<p style="text-align: center; font-size: 0.5em;">
+<a href="https://sphinx-test-reports.readthedocs.io/">https://sphinx-test-reports.readthedocs.io/</a> <!-- .element: class="fragment" data-fragment-index="2" -->
 
 Note:
 
-Und zu guter Letzt die Unit Test Results.
+And last but not least, the Unit Test Results.
 
 "click"
 
-Wir verwenden zum Einbinden der Testergebnisse eine weitere Sphinx-Erweiterung namens sphinx-test-reports.
+We use another Sphinx extension called sphinx-test-reports to integrate the test results.
 
 "click"
 
-Diese Erweiterung bindet JUnit-XML-Dateien in unser Sphinx-Dokument ein und unterstützt gleichzeitig sphinx-needs.
+This extension integrates JUnit XML files into our sphinx document and supports sphinx-needs at the same time.
 
-Die Verlinkung eines Testergebnisses mit dem entsprechenden Test Case erfolgt automatisch über den Namen des Test Cases.
+A test result is automatically linked to the corresponding test case via the name of the test case.
 
-Fazit: mit Sphinx, Sphinx-needs, Doxygen, doxysphinx und sphinx-test-reports haben wir damit alles zusammengebracht, was wir für Automotive SPICE bzgl. Unit Construction und Validation so brauchen.
+Conclusion: with Sphinx, Sphinx-needs, Doxygen, doxysphinx and sphinx-test-reports, we have brought together everything we need for Automotive SPICE in terms of unit construction and validation.

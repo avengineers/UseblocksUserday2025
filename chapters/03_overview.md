@@ -6,21 +6,21 @@
 * Continuous Integration <div class="fragment" style="color:red">Less is more</div>
 
 Note:
-In der Automobilwelt haben wir es mit einer unglaublichen Produktvielfalt zu tun. Zig verschiedene Hersteller, mit verschiedenen Modellen, Modellvarianten und dann noch angepasst an verschiedene Märkte und Regionen, je nach gesetzlichen Vorgaben.
-Hier jedes Produkt als Einzelprojekt aufzusetzen und die Software immer wieder neu zu schreiben, wäre für jedes Unternehmen der Tod.
-Man muss einen geeigneten Weg finden, diese Vielzahl von Produktvarianten über Konfigurationen abzubilden.
-Wir lösen das über Software-Produktlinien und brechen damit die Komplexität unserer Produktpalette ein Stück weit auf.
+In the automotive world, we have to deal with an incredible variety of products. Tens of different manufacturers, with different models, model variants and then adapted to different markets and regions, depending on legal requirements.
+Setting up each product as an individual project and rewriting the software again and again would be death for any company.
+You have to find a suitable way to map this multitude of product variants via configurations.
+We solve this via software product lines and thus break down the complexity of our product range to a certain extent.
 
 (click)
 
-Dazu müssen wir die Qualität unserer Produkte ständig überprüfen. Das gilt im Prinzip für jedes Softwareprodukt.
-In der Automobilwelt geht es aber sehr häufig um sicherheitsrelevante Funktionen, bei denen also Menschenleben oder zumindest deren Unversehrtheit im Vordergrund stehen.
-Dafür bekommt jeder Entwickler ein Prozessregelwerk an die Hand. Mit dessen Hilfe kann Software in solchen Umgebungen standardisiert entwickelt werden.
-Auch wenn viele das als Hindernis sehen, ist es eher als Hilfe gedacht. 
-Ich spreche hier von Automotive Spice, kurz A.SPICE.
+To do this, we have to constantly check the quality of our products. In principle, this applies to every software product.
+In the automotive world, however, we are very often dealing with safety-relevant functions where human life, or at least the safety of human life, is paramount.
+Every developer is provided with a set of process rules for this purpose. This can be used to develop standardised software in such environments.
+Even if many see this as an obstacle, it is intended more as an aid. 
+I am talking here about Automotive Spice, or A.SPICE for short.
 
 (click)
 
-Drittens wollen wir unsere Produkte natürlich schnell fertig stellen und ausliefern.
-Time-to-Market ist vielleicht nicht alles, aber es ist eine gute Basis.
-Wie unsere Lösung aussieht und warum man für ein gutes CI eigentlich gar nicht so viel braucht, werden wir nun Stück für Stück erklären.
+Thirdly, we naturally want to finalise and deliver our products quickly.
+Time-to-market may not be everything, but it is a good basis.
+We will now explain step by step what our solution looks like and why you don't actually need that much for a good CI.
