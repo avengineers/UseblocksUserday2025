@@ -18,9 +18,9 @@ Die Methoden sind aber natürlich auch auf andere Bereiche übertragbar. Unser F
 
 --
 
-## Unsere Lampenkollektion
+## Our Light Collection
 
-![](images/disco-light.png) <!-- .element: class="fragment" data-fragment-index="1" style="float: left; width: 30%" -->
+![](images/disco-light.png)  <!-- .element: class="fragment" data-fragment-index="1" style="float: left; width: 30%" -->
 ![](images/sleeping-light.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: center; width: 30%" -->
 ![](images/spa-light.png) <!-- .element: class="fragment" data-fragment-index="3" style="float: right; width: 30%" -->
 
