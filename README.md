@@ -3,7 +3,7 @@
 * Clone the repository including submodules:
 
 ```powershell
-git clone --recurse-submodules https://github.com/avengineers/CodeDays2024.git
+git clone --recurse-submodules https://github.com/avengineers/UseblocksUserday2025.git
 ```
 
 * For editing the slides I recommend using [Visual Studio Code](https://code.visualstudio.com/).
