@@ -161,6 +161,31 @@ Here you can already see the link to the other artefacts.
 
 --
 
+### Mermaid
+
+```rst [1: 1-12]
+   ```{mermaid}
+   stateDiagram-v2
+       [*] --> LIGHT_OFF: Initial State
+       LIGHT_OFF --> LIGHT_ON : Power State != OFF
+       LIGHT_ON --> LIGHT_OFF : Power State == OFF
+   {% if config.BLINKING %}
+       LIGHT_ON --> BlinkON : Blink Counter >= Blink Period
+       BlinkON --> BlinkOFF : Blink State == TRUE
+       BlinkOFF --> BlinkON : Blink State == FALSE
+       BlinkON --> LIGHT_ON : Reset Blink Counter
+       BlinkOFF --> LIGHT_ON : Reset Blink Counter
+   {% endif %}
+```
+<!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 55%" -->
+
+
+![Light Controller Detailed Design](images/lightController_DetailedDesign.png)
+<!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" --> 
+
+
+--
+
 ### Unit Test Specification
 
 ![](images/lc_uts.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" -->
@@ -272,6 +297,18 @@ Unit Test Results
 <p style="text-align: center; font-size: 0.5em;">
 <a href="https://sphinx-test-reports.readthedocs.io/">https://sphinx-test-reports.readthedocs.io/</a> <!-- .element: class="fragment" data-fragment-index="2" -->
 
+--
+
+### Outcome
+
+Bidirectional traceability
+
+* Requirement
+* Software Detailed Design
+* Implementation
+* Test Specification
+* Test Result
+
 Note:
 
 And last but not least, the Unit Test Results.
@@ -287,3 +324,5 @@ This extension integrates JUnit XML files into our sphinx document and supports 
 A test result is automatically linked to the corresponding test case via the name of the test case.
 
 Conclusion: with Sphinx, Sphinx-needs, Doxygen, doxysphinx and sphinx-test-reports, we have brought together everything we need for Automotive SPICE in terms of unit construction and validation.
+
+Refer to https://engweb.marquardt.de/sple/spled/develop/Disco/html/

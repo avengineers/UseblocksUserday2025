@@ -1,4 +1,37 @@
-## Software Product Line Engineering
+#### Software Product Line Engineering Platform
+
+<div class="grid2x2">
+<table>
+<tr>
+  <td>
+    <figure class="fragment" data-fragment-index="0">
+      <img src="images/ShiftLeft.png" alt="" style="width: 85%;">
+      <figcaption>SHIFT LEFT</figcaption>
+    </figure>
+  </td>
+  <td>
+    <figure class="fragment" data-fragment-index="1">
+      <img src="images/Reuse.png" alt="" style="width: 82%;">
+      <figcaption>REUSE</figcaption>
+    </figure>
+  </td>
+</tr>
+<tr>
+  <td>
+    <figure class="fragment" data-fragment-index="2">
+      <img src="images/Automation.png" alt="" style="width: 85%;">
+      <figcaption>AUTOMATION</figcaption>
+    </figure>
+  </td>
+  <td>
+    <figure class="fragment" data-fragment-index="3">
+      <img src="images/Continuous_Integration.png" alt="" style="width: 81%;">
+      <figcaption>CONTINUOUS INTEGRATION</figcaption>
+    </figure>
+  </td>
+</tr>
+</table>
+</div>
 
 Note:
 
@@ -20,9 +53,20 @@ However, the methods are of course also transferable to other areas. Our framewo
 
 ## Our Light Collection
 
-![](images/disco-light.png)  <!-- .element: class="fragment" data-fragment-index="1" style="float: left; width: 30%" -->
-![](images/sleeping-light.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: center; width: 30%" -->
-![](images/spa-light.png) <!-- .element: class="fragment" data-fragment-index="3" style="float: right; width: 30%" -->
+<div class="three-wide">
+  <figure class="fragment" data-fragment-index="0">
+      <img src="images/disco-light.png" alt="">
+      <figcaption>flash</figcaption>
+  </figure>
+  <figure class="fragment" data-fragment-index="1">
+      <img src="images/sleeping-light.png" alt="">
+      <figcaption>dim & gentle fade</figcaption>
+  </figure>
+  <figure class="fragment" data-fragment-index="2">
+      <img src="images/spa-light.png" alt="">
+      <figcaption>gentle pulse</figcaption>
+  </figure>
+</div>
 
 Note:
 

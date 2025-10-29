@@ -1,26 +1,22 @@
-## What were our challenges again?
+## Recap
 
-* Project diversity <p style="color: red"><span class="fragment highlight-green" data-fragment-index="1">Software Product Lines</span><span class="fragment" data-fragment-index="1">👍</span></p>
-* Documentation and verification of software quality <p style="color: red"><span class="fragment highlight-green" data-fragment-index="2">A.SPICE</span><span class="fragment" data-fragment-index="2">👍</span></p>
-* Continuous Integration <p style="color: red"><span class="fragment highlight-green" data-fragment-index="3">Less is more</span><span class="fragment" data-fragment-index="3">👍</span></p>
+* X-as-Code <!-- .element: class="fragment" data-fragment-index="1" -->
+* Platform Usage <!-- .element: class="fragment" data-fragment-index="2" -->
+* Tools Fragmentation <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Note:
 
-Okay, viel erzählt, kurzer Recap unserer Challenges.
-
-(click)
-
-Unsere Antwort auf Projektvielfalt: Softwareproduktlinien
-
-(click)
-
-Unsere Antwort auf SW Qualität und A.SPICE: Automatisches A.SPICE konformes Reporting
-
-(click)
-
-Unsere Antwort auf CI: Leichtgewichtige Pipelines für GitHub, Jenkins und Co., die Intelligenz steckt im Buildsystem.
-
-
+* Document where you write code (lightweight approach).
+* Reduce cognitive load of the developers.
+* Positive feedback from trained Developers.  
+--> click
+* ~30% of all product variants are developed on the SPLE Platform, and this figure is rising.
+* Establish a cross-project development standard.  
+--> click
+* Close tool gaps between Software and System.
+* Support seamless integration between system and software engineering.
+* "One Tool to rule them all".
+* Build a bridge to Model Based Software/Systems Engineering
 
 ---
 
