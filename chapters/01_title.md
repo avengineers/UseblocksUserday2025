@@ -9,4 +9,5 @@ November 13th, Munich
 <!-- .element: style="float: right; width: 50%" -->
 
 Note:
+<span style="color: grey;">*(Michael and Jochen)*</span>  
 Hello everyone and welcome to our talk on X-as-code in Automotive Software Development.

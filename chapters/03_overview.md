@@ -1,19 +1,21 @@
 
-## Where we come from?
+## Where do we come from?
 
 Note:
-In the automotive world, we have to deal with an **incredible variety of products**. Tens of different manufacturers, with different models, model variants and then adapted to different markets and regions, depending on legal requirements.  
+<span style="color: grey;">*(Michael)*</span>  
+In the automotive world, we have to deal with an **incredible variety of products**.  
+Tens of different manufacturers, with different models, model variants and then adapted to different markets and regions, depending on legal requirements.  
 
 --
 
 <!-- .slide: data-transition="slide-in fade-out" -->
 
-## Every project starts from zero
+## Developing Projects or Products?
 
 ![](images/Product_Hell.png)<!-- .element: style="float: center; width: 80%" -->
 
 Note:
-
+<span style="color: grey;">*(Michael)*</span>  
 When we develop a product for a customer, we start by copying code and modifying it to meet the customer demands.  
 
 This approach is also known as **"clone and own"** and leads to Software erosion.
@@ -30,7 +32,7 @@ We solve this via software product lines and thus break down the complexity of o
 ![](images/Compliance.png)<!-- .element: style="float: center; width: 80%" -->
 
 Note:
-
+<span style="color: grey;">*(Michael)*</span>  
 In the automotive world, however, we are very often dealing with **safety-relevant functions** where human life, or at least the safety of human life, is paramount.  
 
 Every developer is provided with a set of **process rules** for this purpose. This can be used to develop standardized software in such environments.  

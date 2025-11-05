@@ -34,31 +34,32 @@
 </div>
 
 Note:
-
-Software product lines, also known as SPL, are an approach to software development that aims to efficiently **develop a family of similar software products**. They are particularly useful in areas where similar products need to be developed for different customers or markets.
+<span style="color: grey;">*(Michael)*</span>  
+Aim: Develop a family of similar software products. They are particularly useful in areas where similar products need to be developed for different customers or markets.
 
 **Shift Left:**
 
-Embrace the Shift Left approach to **enhance software quality by preventing defects as early as possible**. By moving testing and quality assurance activities to the beginning of the development lifecycle, you can achieve higher quality software, faster feedback loops and improved collaboration among team members.  
-*(TDD, Unit Testing, Static Code Analysis)*
+* Enhance software quality by preventing defects as early as possible
+* Achieve higher quality software, faster feedback loops and improved collaboration among team members.  
+* TDD, Unit Testing, Static Code Analysis
 
 **Reuse**
 
-The basic idea is to **identify common features and functionalities** that occur in several products and make them reusable. This approach makes it possible to create different products on the basis of a common code and component base and to extend these with specific functions that are unique to each product.
-
-The main advantage of this approach is the reusability of the software, which leads to a reduction in development time and costs.
-
-In addition, this approach enables consistent quality across different products and facilitates the maintenance and further development of the software.  
-*(Variant Management, Reusable Components, Docs-As-Code)*
+* Identify common features and functionalities
+* Create different products on the basis of a common code
+* Extend these with specific functions that are unique to each product.
+* Consistent quality across different products
+* Variant Management, Reusable Components, Docs-As-Code
 
 **Automation**
 
-Automation in software development aims to increase efficiency, improve quality, optimize resource allocation and reduce costs. **It allows developers to focus on more complex and creative tasks**, while repetitive and time-consuming activities are handled by automated systems.  
-*(Tools Installation, Artifacts, Reporting, Documentation)*
+* Increase efficiency, improve quality, optimize resource allocation and reduce costs. 
+* Focus on more complex and creative tasks, while repetitive and time-consuming activities are handled by automated systems.  
 
 **Continuous Integration**
 
-CI is a software development practice to integrate frequent and small software changes into a common shared codebase (i.e., a git repository) several times a day. Each change is then verified by an automated build, allowing teams to detect problems early. By integrating regularly, you can detect errors quickly and locate them more easily.
+* Integrate frequent and small software changes into a common shared codebase.
+* Each change is verified by an automated build.
 
 --
 
@@ -81,6 +82,7 @@ CI is a software development practice to integrate frequent and small software c
 
 Note:
 
+<span style="color: grey;">*(Michael)*</span>  
 Although our talk is about the automotive industry, I would now like to explain SPLE using the example of lamps. This is a small  project that we have created for demonstration purposes.
 
 However, the methods are of course also transferable to other areas. Our framework is in productive use with real and complex projects.
@@ -93,15 +95,15 @@ At first glance, these lamps appear to be completely different.
 
 <span style="color: grey;">*(click)*</span>
 
-The disco light with its energetic flashing function, ideal for parties;
+The **Disco** light with its energetic flashing function, ideal for parties;
 
 <span style="color: grey;">*(click)*</span>
 
-The sleep light, which creates a calming atmosphere for a good night's sleep with its gentle colour change and dimmability;
+The **Sleep** light, which creates a calming atmosphere for a good night's sleep with its gentle colour change and dimmability;
 
 <span style="color: grey;">*(click)*</span>
 
-And the spa light, which has a relaxing and rejuvenating effect with its gentle pulsation.
+And the **SPA** light, which has a relaxing and rejuvenating effect with its gentle pulsation.
 
 These lamps have been developed to create a unique mood in different environments.
 
@@ -114,22 +116,18 @@ But for all their differences, they have one thing in common.
 ![](images/core-assets.png) <!-- .element: style="width: 50%" -->
 
 Note:
-What connects these lamps on a deeper level is their core.
-
+<span style="color: grey;">*(Michael)*</span>  
+What connects these lamps on a deeper level is their **core**.
 All three lamps use the same basic software to control their LEDs.
-
 This common platform is the core of our product line.
+Customized features have now been added.  
 
-Customised features have now been added.
+We have added a flashing function to the **Disco** light.
+For the **Sleep** light, we have focused on integrating a colour change and dimming mechanism.
+And the **SPA** light has a gentle pulsation.
 
-We have added a flashing function to the disco light.
-
-For the sleep light, we have focused on integrating a colour change and dimming mechanism.
-
-And the spa light has a gentle pulsation.
-
-By recognising and reusing core components, the development effort is reduced enormously.
-
+By recognizing and reusing core components, the development effort is reduced enormously.
 Maintenance costs are reduced because we avoid code erosion.
-
 And how core parts and customer requirements come together is determined by our underlying build system consisting of Cmake and KConfig.
+
+<span style="color: grey;">*(Hand over to Jochen)*</span>

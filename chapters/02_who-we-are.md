@@ -13,11 +13,8 @@
 </div> <!-- .element: style="float: right; width: 40%;" -->
 
 Note:
+<span style="color: grey;">(Michael and Jochen)</span>  
 
-Jochen:  
-I  worked in various areas of software development and gained 20 years of experience in this field.
-
-Michael:
 
 --
 
@@ -27,4 +24,7 @@ Michael:
 
 Note:
 
+<span style="color: grey;">*(Jochen)*</span>  
 Let's watch an approximately 3 minutes image video to get you an idea, what Marquardt is.
+
+<span style="color: grey;">*(Hand over to Michael)*</span>

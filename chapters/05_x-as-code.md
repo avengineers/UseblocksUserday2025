@@ -2,23 +2,20 @@
 
 ## X-As-Code
 
-[ASPICE = Automotive Software Process Improvement and Capability Determination](https://vda-qmc.de/automotive-spice/) <!-- .element: class="fragment" data-fragment-index="1" -->
+... to fulfill the [Automotive Spice](https://vda-qmc.de/en/automotive-spice/) needs
 
 Note:
-Now let's move on to our second challenge: A.SPICE  
+<span style="color: grey;">*(Jochen)*</span>  
+Now let's move on to our second challenge: A.SPICE Traceability  
 Lets see how it connects to "X-as-Code".
 
-<span style="color: grey;">*(click)*</span>
-
-The abbreviation A.SPICE stands for ...
+The abbreviation A.SPICE stands for **Automotive Software Process and Capability Determination**
 
 Sounds fancy, but it is essentially a process model that describes the development of software in the automotive industry.
 
-It is also a maturity model that defines maturity levels 0 to 5.
-
 These maturity levels are achieved through the fulfilment of process requirements and must be demonstrated by defined artifacts.
 
-I won't go into the maturity levels in detail, but I will go into the artefacts that need to be created.
+I won't go into the maturity levels in detail, but I will go into the artifacts that need to be created.
 
 --
 
@@ -27,7 +24,7 @@ I won't go into the maturity levels in detail, but I will go into the artefacts 
 ![](images/aspice_traceability.png)
 
 Note:
-
+<span style="color: grey;">*(Jochen)*</span>  
 Here you can actually see quite well what is expected of the developers: Lots of artifacts.
 
 And then everything has to be linked together.
@@ -40,6 +37,8 @@ SWE.3: Software Detailed Design and Unit Construction and SWE.4: Software Unit V
 
 processes.
 
+We interpret the V-Model not as a timely alignment of tasks. Moreover, we would like to make use of the relationship among disciplines.
+
 --
 
 <!-- .slide: data-transition="fade" -->
@@ -49,10 +48,10 @@ processes.
 ![](images/lc_dir_tree.png)<!-- .element: class="fragment" data-fragment-index="2" -->
 
 Note:
+<span style="color: grey;">*(Jochen)*</span>  
+Here we can see in detail what we have to do for SWE.3 and SWE.4.
 
-Here we can see again in detail what we have to do for SWE.3 and SWE.4.
-
-We write the units in C and test them with Google Test or something similar, of course, we have that under control.
+We write the units in C and test them with Google Test or something similar.
 
 We create the documentation including the software detailed design with Sphinx and Restructured Text, also easy.
 
@@ -68,7 +67,6 @@ The answer is ...
 
 ## Sphinx + Sphinx-Needs
 
-conf.py:<!-- .element: class="fragment" data-fragment-index="2" -->
 ```python [152: 1|3-9|11-19]
 extensions.append("sphinx_needs")
 
@@ -93,20 +91,16 @@ needs_extra_links = [
 <!-- .element: class="fragment" data-fragment-index="2" style="font-size:10pt" -->
 
 Note:
-
-Sphinx-Needs is an open source extension for Sphinx.
-
-It makes it possible to define so-called "Needs" types and link them together.
+<span style="color: grey;">*(Jochen)*</span>  
+It allows to define so-called "Needs" types and link them together.
 
 <span style="color: grey;">*(click)*</span>
 
-We have defined our own types for the A.SPICE artefacts: Requirement, Specification, Implementation and Test Case.
+We have defined our own types for the A.SPICE artifacts.
 
 <span style="color: grey;">*(click)*</span>
 
-We have also defined our own link types that describe the links between the artefacts.
-
-Okay, so what does this look like in the code?
+We have also defined our own link types that describe the links between the artifacts.
 
 --
 
@@ -139,7 +133,7 @@ Design Considerations
 <!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 55%" -->
 
 Note:
-
+<span style="color: grey;">*(Jochen)*</span>  
 First, let's take a look at the software detailed design.
 
 <span style="color: grey;">*(click)*</span>
@@ -176,6 +170,10 @@ Here you can already see the link to the other artefacts.
 
 ![Light Controller Detailed Design](images/lightController_DetailedDesign.png)
 <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" --> 
+
+Notes:
+<span style="color: grey;">*(Jochen)*</span>  
+Note the common configurability of source code, test, docu
 
 --
 
@@ -215,10 +213,7 @@ TEST(light_controller, test_light_stays_off)
 https://boschglobal.github.io/doxysphinx/ <!-- .element: class="fragment" data-fragment-index="2" -->
 
 Note:
-
-In the unit test specification, i.e. directly in the test code, the situation is somewhat different.
-
-<span style="color: grey;">*(click)*</span>
+<span style="color: grey;">*(Jochen)*</span>  
 
 Here is a code example of a Needs element with the type "test" in an rst block within a Doxygen comment.
 
@@ -290,25 +285,10 @@ Unit Test Results
 <p style="text-align: center; font-size: 0.5em;">
 <a href="https://sphinx-test-reports.readthedocs.io/">https://sphinx-test-reports.readthedocs.io/</a> <!-- .element: class="fragment" data-fragment-index="2" -->
 
---
-
-### Outcome
-
-Bidirectional traceability
-
-* Requirement
-* Software Detailed Design
-* Implementation
-* Test Specification
-* Test Result
-
 Note:
+<span style="color: grey;">*(Jochen)*</span>  
 
-And last but not least, the Unit Test Results.
-
-<span style="color: grey;">*(click)*</span>
-
-We use another Sphinx extension called sphinx-test-reports to integrate the test results.
+We use another Sphinx extension called **sphinx-test-reports** to integrate the test results.
 
 <span style="color: grey;">*(click)*</span>
 
@@ -316,6 +296,10 @@ This extension integrates JUnit XML files into our sphinx document and supports 
 
 A test result is automatically linked to the corresponding test case via the name of the test case.
 
-Conclusion: with Sphinx, Sphinx-needs, Doxygen, doxysphinx and sphinx-test-reports, we have brought together everything we need for Automotive SPICE in terms of unit construction and validation.
+Conclusion:  
+with Sphinx, Sphinx-needs, Doxygen, doxysphinx and sphinx-test-reports, we have brought together everything we need for Automotive SPICE in terms of unit construction and validation.
 
 Refer to https://engweb.marquardt.de/sple/spled/develop/Disco/html/
+
+--
+
