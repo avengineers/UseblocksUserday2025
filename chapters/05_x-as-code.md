@@ -1,15 +1,14 @@
 <!-- .slide: data-transition="none-out" -->
 
-## A.SPICE
+## X-As-Code
 
-Automotive Software Process Improvement and Capability Determination <!-- .element: class="fragment" data-fragment-index="1" -->
-
-https://vda-qmc.de/automotive-spice/ <!-- .element: class="fragment" data-fragment-index="1" -->
+[ASPICE = Automotive Software Process Improvement and Capability Determination](https://vda-qmc.de/automotive-spice/) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Note:
-Now let's move on to our second challenge: A.SPICE.
+Now let's move on to our second challenge: A.SPICE  
+Lets see how it connects to "X-as-Code".
 
-"click"
+<span style="color: grey;">*(click)*</span>
 
 The abbreviation A.SPICE stands for ...
 
@@ -17,7 +16,7 @@ Sounds fancy, but it is essentially a process model that describes the developme
 
 It is also a maturity model that defines maturity levels 0 to 5.
 
-These maturity levels are achieved through the fulfilment of process requirements and must be demonstrated by defined artefacts.
+These maturity levels are achieved through the fulfilment of process requirements and must be demonstrated by defined artifacts.
 
 I won't go into the maturity levels in detail, but I will go into the artefacts that need to be created.
 
@@ -29,7 +28,7 @@ I won't go into the maturity levels in detail, but I will go into the artefacts 
 
 Note:
 
-Here you can actually see quite well what is expected of the developers: Lots of artefacts.
+Here you can actually see quite well what is expected of the developers: Lots of artifacts.
 
 And then everything has to be linked together.
 
@@ -57,7 +56,7 @@ We write the units in C and test them with Google Test or something similar, of 
 
 We create the documentation including the software detailed design with Sphinx and Restructured Text, also easy.
 
-"click"
+<span style="color: grey;">*(click)*</span>
 
 We put all of this for a component in a folder that looks like this: doc, src and test.
 
@@ -95,19 +94,15 @@ needs_extra_links = [
 
 Note:
 
-Sphinx and Sphinx-Needs
-
-"click"
-
 Sphinx-Needs is an open source extension for Sphinx.
 
 It makes it possible to define so-called "Needs" types and link them together.
 
-"click"
+<span style="color: grey;">*(click)*</span>
 
 We have defined our own types for the A.SPICE artefacts: Requirement, Specification, Implementation and Test Case.
 
-"click"
+<span style="color: grey;">*(click)*</span>
 
 We have also defined our own link types that describe the links between the artefacts.
 
@@ -147,13 +142,13 @@ Note:
 
 First, let's take a look at the software detailed design.
 
-"click"
+<span style="color: grey;">*(click)*</span>
 
 Here we see an example of a Needs element in Software Detailed Design, i.e. directly in rst.
 
 Here we use the Needs type "spec" for Specification, give the spec element a name and a unique ID.
 
-"click"
+<span style="color: grey;">*(click)*</span>
 
 The generated document then looks like this.
 
@@ -179,10 +174,8 @@ Here you can already see the link to the other artefacts.
 ```
 <!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 55%" -->
 
-
 ![Light Controller Detailed Design](images/lightController_DetailedDesign.png)
 <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" --> 
-
 
 --
 
@@ -225,13 +218,13 @@ Note:
 
 In the unit test specification, i.e. directly in the test code, the situation is somewhat different.
 
-"click"
+<span style="color: grey;">*(click)*</span>
 
 Here is a code example of a Needs element with the type "test" in an rst block within a Doxygen comment.
 
 As you can see here, with a test element we also specify which spec elements and/or requirements are tested.
 
-"click"
+<span style="color: grey;">*(click)*</span>
 
 To get these rst blocks into our Sphinx document, we use Doxygen on the one hand and another open source tool called doxysphinx on the other.
 
@@ -270,11 +263,11 @@ Note:
 
 The situation is similar in the software unit.
 
-"click"
+<span style="color: grey;">*(click)*</span>
 
 Here we use a Needs element of type "impl" and link the spec elements that we are implementing.
 
-"click"
+<span style="color: grey;">*(click)*</span>
 
 An impl element with the link to the corresponding spec element then appears in the Sphinx document in the description of the documented function.
 
@@ -313,11 +306,11 @@ Note:
 
 And last but not least, the Unit Test Results.
 
-"click"
+<span style="color: grey;">*(click)*</span>
 
 We use another Sphinx extension called sphinx-test-reports to integrate the test results.
 
-"click"
+<span style="color: grey;">*(click)*</span>
 
 This extension integrates JUnit XML files into our sphinx document and supports sphinx-needs at the same time.
 

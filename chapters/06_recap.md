@@ -9,10 +9,10 @@ Note:
 * Document where you write code (lightweight approach).
 * Reduce cognitive load of the developers.
 * Positive feedback from trained Developers.  
---> click
+<span style="color: grey;">*(click)*</span>
 * ~30% of all product variants are developed on the SPLE Platform, and this figure is rising.
 * Establish a cross-project development standard.  
---> click
+<span style="color: grey;">*(click)*</span>
 * Close tool gaps between Software and System.
 * Support seamless integration between system and software engineering.
 * "One Tool to rule them all".

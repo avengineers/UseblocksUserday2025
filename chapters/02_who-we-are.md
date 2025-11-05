@@ -15,7 +15,7 @@
 Note:
 
 Jochen:  
-I have worked in various areas of software development and have 20 years of experience in this field.
+I  worked in various areas of software development and gained 20 years of experience in this field.
 
 Michael:
 
