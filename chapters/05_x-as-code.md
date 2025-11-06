@@ -300,6 +300,3 @@ Conclusion:
 with Sphinx, Sphinx-needs, Doxygen, doxysphinx and sphinx-test-reports, we have brought together everything we need for Automotive SPICE in terms of unit construction and validation.
 
 Refer to https://engweb.marquardt.de/sple/spled/develop/Disco/html/
-
---
-

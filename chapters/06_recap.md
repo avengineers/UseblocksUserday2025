@@ -1,8 +1,10 @@
 ## We're not there yet
 
-* Continue to promote X-as-Code <!-- .element: class="fragment" data-fragment-index="1" -->
-* Drive forward the rollout of the SPLE platform <!-- .element: class="fragment" data-fragment-index="2" -->
-* One Tool to rule them all <!-- .element: class="fragment" data-fragment-index="3" -->
+--
+
+### Docs-As-Code
+
+![](images/docs-as-code.png) <!-- .element: style="float: center; width: 80%" -->
 
 Note:
 <span style="color: grey;">*(Jochen)*</span>  
@@ -10,20 +12,35 @@ Note:
 * Positive feedback from trained Developers.
 * Reduce cognitive load of the developers.
 <span style="color: grey;">*(click)*</span>
-* ~30% of all product variants are developed on the SPLE Platform, and this figure is rising.
-* Establish a cross-project development standard.  
-<span style="color: grey;">*(click)*</span>
-* Close tool gaps between Software and System.
-* Support seamless integration between system and software engineering.
-* Build a bridge to Model Based Software/Systems Engineering
 
 --
 
+### Scale SPLE now
+
+![](images/scale-sple-now.png) <!-- .element: style="float: center; width: 80%" -->
+
+Note:
+* ~30% of all product variants are developed on the SPLE Platform, and this figure is rising.
+* Establish a cross-project development standard.  
+<span style="color: grey;">*(click)*</span>
+
+--
+
+### Close tool gaps / bridge to MBSE
+
+![](images/close-the-gap.png) <!-- .element: style="float: center; width: 80%" -->
+
+Note:
+* Close tool gaps between Software and System.
+* Support seamless integration between system and software engineering.
+* Build a bridge to Model Based Software/Systems Engineering
+<span style="color: grey;">*(click)*</span>
+
+---
+
 ## Q & A
 
-<div>
-<img src="images/QandA.png">
-![Question and Answers](image.png)
+![Question and Answers](images/QandA.png) <!-- .element: style="float: center; width: 80%" -->
 
 ---
 

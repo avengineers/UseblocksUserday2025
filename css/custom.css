@@ -62,35 +62,6 @@
     filter: none;
 }
 
-.grid2x2 table { 
-  width:100%;
-  border-collapse: separate;   /* use spacing instead of borders */
-  border-spacing: 16px 12px;   /* adjust gaps between cells/rows */
-  border: 0;
-}
-
-.grid2x2 td, 
-.grid2x2 th,
-.reveal table td,
-.reveal table th {
-  border: 0 !important;        /* nuke any theme borders */
-  background: transparent;
-}
-
-.grid2x2 figure{margin:0}
-
-.grid2x2 img{
-  max-height:20vh;       /* keep two rows on screen */
-  width:auto;            /* preserve aspect ratio */
-  display:block;margin:0 auto;
-  object-fit:contain;
-}
-
-.grid2x2 figcaption{
-  font-size:.6em; line-height:1.2; margin-top:.35em;
-  text-align:center; opacity:.8;
-}
-
 .three-wide { 
   display:grid; grid-template-columns:repeat(3,1fr); gap:18px; align-items:start;
 }

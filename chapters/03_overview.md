@@ -1,5 +1,5 @@
 
-## Where do we come from?
+## Origin Story
 
 Note:
 <span style="color: grey;">*(Michael)*</span>  
@@ -10,7 +10,7 @@ Tens of different manufacturers, with different models, model variants and then 
 
 <!-- .slide: data-transition="slide-in fade-out" -->
 
-## Developing Projects or Products?
+## Projects Everywhere
 
 ![](images/Product_Hell.png)<!-- .element: style="float: center; width: 80%" -->
 
@@ -27,7 +27,7 @@ We solve this via software product lines and thus break down the complexity of o
 
 --
 
-## Compliance ≠ free
+## Regulated Reality
 
 ![](images/Compliance.png)<!-- .element: style="float: center; width: 80%" -->
 
