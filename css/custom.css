@@ -80,14 +80,14 @@
 .grid2x2 figure{margin:0}
 
 .grid2x2 img{
-  max-height:24vh;       /* keep two rows on screen */
+  max-height:20vh;       /* keep two rows on screen */
   width:auto;            /* preserve aspect ratio */
   display:block;margin:0 auto;
   object-fit:contain;
 }
 
 .grid2x2 figcaption{
-  font-size:.8em; line-height:1.2; margin-top:.35em;
+  font-size:.6em; line-height:1.2; margin-top:.35em;
   text-align:center; opacity:.8;
 }
 
