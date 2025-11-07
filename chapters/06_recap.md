@@ -58,3 +58,7 @@ Note:
     <p style="font-size: 0.35em; margin: 0;"><a href="https://github.com/avengineers/SPLed/">https://github.com/avengineers/SPLed/</a></p>
   </div>
 </div>
+
+<p style="text-align:center; font-size:0.3em; color:#6b7280; margin-top:0.8rem;">
+  Artwork generated with generative AI; images are illustrative.
+</p>
