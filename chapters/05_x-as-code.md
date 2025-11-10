@@ -2,42 +2,33 @@
 
 ## X-As-Code
 
-... to fulfill the [Automotive Spice](https://vda-qmc.de/en/automotive-spice/) needs
+... to fulfill the regulatory needs.
 
 Note:
 <span style="color: grey;">*(Jochen)*</span>  
-Now let's move on to our second challenge: A.SPICE Traceability  
-Lets see how it connects to "X-as-Code".
-
-The abbreviation A.SPICE stands for **Automotive Software Process and Capability Determination**
-
-Sounds fancy, but it is essentially a process model that describes the development of software in the automotive industry.
-
-These maturity levels are achieved through the fulfilment of process requirements and must be demonstrated by defined artifacts.
-
-I won't go into the maturity levels in detail, but I will go into the artifacts that need to be created.
+Now let's move on to our actual challenge and see how we found a solution for this "regulated reality" Michael just talked about by applying "X-as-Code".
 
 --
 
 <!-- .slide: data-transition="slide-in fade-out" -->
 
 ![](images/aspice_traceability.png)
+[Automotive SPICE (ASPICE)](https://vda-qmc.de/en/automotive-spice/)
 
 Note:
 <span style="color: grey;">*(Jochen)*</span>  
+The abbreviation A.SPICE stands for **Automotive Software Process and Capability Determination**
+
+Sounds fancy, but it is essentially a process model that describes the development of software in the automotive industry.
+
+These maturity levels are achieved through the fulfillment of process requirements and must be demonstrated by defined artifacts.
+
+I won't go into the maturity levels in detail, but I will go into the artifacts that need to be created.
 Here you can actually see quite well what is expected of the developers: Lots of artifacts.
 
 And then everything has to be linked together.
 
 And since we as software engineers naturally want to automate everything, our goal is to be able to create the required artifacts with as little additional effort as possible using our platform.
-
-Initially, we focussed on the processes
-
-SWE.3: Software Detailed Design and Unit Construction and SWE.4: Software Unit Verification
-
-processes.
-
-We interpret the V-Model not as a timely alignment of tasks. Moreover, we would like to make use of the relationship among disciplines.
 
 --
 
@@ -48,7 +39,12 @@ We interpret the V-Model not as a timely alignment of tasks. Moreover, we would 
 ![](images/lc_dir_tree.png)<!-- .element: class="fragment" data-fragment-index="2" -->
 
 Note:
-<span style="color: grey;">*(Jochen)*</span>  
+Up to now, we focussed on the processes
+* SWE.3: Software Detailed Design and Unit Construction
+* SWE.4: Software Unit Verification
+
+We interpret the V-Model not as a timely alignment of tasks. Moreover, we would like to make use of the relationship among disciplines.
+
 Here we can see in detail what we have to do for SWE.3 and SWE.4.
 
 We write the units in C and test them with Google Test or something similar.
@@ -91,7 +87,6 @@ needs_extra_links = [
 <!-- .element: class="fragment" data-fragment-index="2" style="font-size:10pt" -->
 
 Note:
-<span style="color: grey;">*(Jochen)*</span>  
 It allows to define so-called "Needs" types and link them together.
 
 <span style="color: grey;">*(click)*</span>
@@ -133,7 +128,6 @@ Design Considerations
 <!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 55%" -->
 
 Note:
-<span style="color: grey;">*(Jochen)*</span>  
 First, let's take a look at the software detailed design.
 
 <span style="color: grey;">*(click)*</span>
@@ -172,8 +166,11 @@ Here you can already see the link to the other artefacts.
 <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" --> 
 
 Notes:
-<span style="color: grey;">*(Jochen)*</span>  
-Note the common configurability of source code, test, docu
+Mermaid offers the possibility to generate text-based UML diagrams.
+
+<span style="color: grey;">*(click)*</span>  
+
+Note the single source of configuration, which applies to source code, test and docu
 
 --
 
@@ -181,14 +178,14 @@ Note the common configurability of source code, test, docu
 
 ![](images/lc_uts.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" -->
 
-```C++ [50: ]
+```rst [50: 1-7]
 /**
  * @rst
  * .. test:: light_controller.test_light_stays_off
  *    :id: TS_LC-006
  *    :tests: SWDD_LC-001, SWDD_LC-004, R_001
  * @endrst
- */
+ *
 TEST(light_controller, test_light_stays_off)
 {
     CREATE_MOCK(mymock);
@@ -213,8 +210,6 @@ TEST(light_controller, test_light_stays_off)
 https://boschglobal.github.io/doxysphinx/ <!-- .element: class="fragment" data-fragment-index="2" -->
 
 Note:
-<span style="color: grey;">*(Jochen)*</span>  
-
 Here is a code example of a Needs element with the type "test" in an rst block within a Doxygen comment.
 
 As you can see here, with a test element we also specify which spec elements and/or requirements are tested.
@@ -231,7 +226,7 @@ Doxyshpinx enables us to integrate the complete HTML output of Doxygen into our 
 
 ![](images/lc_swu.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" -->
 
-```C [106: ]
+```rst [106: 1-12]
 /**
  * @rst
  * .. impl:: Light Controller's main function
@@ -286,7 +281,6 @@ Unit Test Results
 <a href="https://sphinx-test-reports.readthedocs.io/">https://sphinx-test-reports.readthedocs.io/</a> <!-- .element: class="fragment" data-fragment-index="2" -->
 
 Note:
-<span style="color: grey;">*(Jochen)*</span>  
 
 We use another Sphinx extension called **sphinx-test-reports** to integrate the test results.
 

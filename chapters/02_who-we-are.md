@@ -25,6 +25,7 @@ Note:
 Note:
 
 <span style="color: grey;">*(Jochen)*</span>  
-Let's watch an approximately 3 minutes image video to get you an idea, what Marquardt is.
+Before Michael says a few words about the context in which we use X-as-Code, 
+let's watch an approximately 3 minutes image video to get you an idea, what Marquardt is.
 
 <span style="color: grey;">*(Hand over to Michael)*</span>

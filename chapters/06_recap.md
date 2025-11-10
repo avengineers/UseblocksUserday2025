@@ -7,11 +7,10 @@
 ![](images/docs-as-code.png) <!-- .element: style="float: center; width: 80%" -->
 
 Note:
-<span style="color: grey;">*(Jochen)*</span>  
-* Document where you write code (lightweight approach).
-* Positive feedback from trained Developers.
-* Reduce cognitive load of the developers.
-<span style="color: grey;">*(click)*</span>
+Positive feedback from trained Developers.
+
+* Reduced cognitive load.
+* Document where we write code.
 
 --
 
@@ -22,7 +21,6 @@ Note:
 Note:
 * ~30% of all product variants are developed on the SPLE Platform, and this figure is rising.
 * Establish a cross-project development standard.  
-<span style="color: grey;">*(click)*</span>
 
 --
 
@@ -34,7 +32,6 @@ Note:
 * Close tool gaps between Software and System.
 * Support seamless integration between system and software engineering.
 * Build a bridge to Model Based Software/Systems Engineering
-<span style="color: grey;">*(click)*</span>
 
 ---
 
